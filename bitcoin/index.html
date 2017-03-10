@@ -11,8 +11,8 @@
         var myObj = this.responseText;
         var jsonPretty = JSON.stringify(JSON.parse(myObj),null,2);
         document.getElementById("info").innerHTML = jsonPretty;
-    }
-};
+    	}
+	};
 xmlhttp.open("GET", "http://bitcoin.mubiz.com/info", true);
 xmlhttp.send();
 </script>
@@ -29,6 +29,7 @@ xmlhttp.send();
   <script src="../custom.js"></script>
   
  <div class="row">
+	 <h2>WS INFO</h2>
 	<div class="col-lg-12 col-xs-6">
     	<pre>
         	<code id="info" class="json kljs"></code>
