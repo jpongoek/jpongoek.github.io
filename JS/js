@@ -6,5 +6,5 @@ xmlhttp.onreadystatechange = function() {
         document.getElementById("demo").innerHTML = jsonPretty;
     }
 };
-xmlhttp.open("GET", "https://block.io/api/v2/get_balance/?api_key=9601-a1f3-7a9e-ab8d", true);
+xmlhttp.open("GET", "https://block.io/api/v2/get_balance/?api_key="9601-a1f3-7a9e-ab8d", true);
 xmlhttp.send();
